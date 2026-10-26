@@ -1,6 +1,6 @@
-# 排序算法可视化
+# 算法可视化
 
-Vue3 单页演示：自定义柱子数量，冒泡 / 选择 / 插入 / 快速 / 归并逐步动画，统计移动次数与含动画耗时。
+Vue3 + Vue Router。当前功能：排序算法可视化。
 
 ## 开发
 
@@ -9,7 +9,12 @@ npm install
 npm run dev
 ```
 
-## 校验算法步骤
+- `/` → 重定向到 `/sort`
+- `/sort` → `src/views/sort` 排序可视化
+
+后续功能按 `src/views/<功能>` 加页面，并在 `src/router/index.ts` 注册路由即可。
+
+## 校验排序步骤
 
 ```bash
 npm run verify:sorts

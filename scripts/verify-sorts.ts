@@ -5,7 +5,12 @@ import {
   insertionSortSteps,
   quickSortSteps,
   mergeSortSteps,
-} from '../src/sorts'
+  shellSortSteps,
+  heapSortSteps,
+  countingSortSteps,
+  radixSortSteps,
+  bucketSortSteps,
+} from '../src/views/sort/algorithms'
 
 function assertSorted(name: string, input: number[], steps: ReturnType<typeof bubbleSortSteps>) {
   const result = applySteps(input, steps)
@@ -35,6 +40,11 @@ const algos = [
   ['insertion', insertionSortSteps],
   ['quick', quickSortSteps],
   ['merge', mergeSortSteps],
+  ['shell', shellSortSteps],
+  ['heap', heapSortSteps],
+  ['counting', countingSortSteps],
+  ['radix', radixSortSteps],
+  ['bucket', bucketSortSteps],
 ] as const
 
 for (const sample of samples) {
